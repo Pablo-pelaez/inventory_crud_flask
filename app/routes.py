@@ -54,6 +54,3 @@ def delete(id):
     db.session.commit()
     flash('Item deleted successfully!')
     return redirect(url_for('main.index'))
-
-
-#change
