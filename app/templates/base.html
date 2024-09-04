@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <title>{% block title %}{% endblock %}</title>
+    <script>
+        function confirmDelete(event) {
+            if (!confirm("Are you sure you want to delete this item?")) {
+                event.preventDefault();
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
